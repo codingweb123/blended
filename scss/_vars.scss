@@ -1,0 +1,15 @@
+$primary: #22343D;
+$logo: #173A56;
+
+$computer: 1158px;
+$tablet: 768px;
+$mobile: 320px;
+
+@function w($gap, $nums) {
+    $width: calc((100% - $gap * ($nums - 1)) / $nums );
+    @return $width;
+}
+@function l($height, $size) {
+    $lh: $height / $size;
+    @return $lh;
+}

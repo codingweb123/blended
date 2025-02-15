@@ -1,0 +1,113 @@
+@import "vars";
+@import "mixin";
+@import "fonts";
+@import "reset";
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    max-width: 411px;
+    padding: 0 31px;
+    margin: 0 auto;
+}
+
+body {
+    color: $primary;
+    background: #fff;
+}
+
+.section {
+    padding-top: 100px;
+}
+
+.btn {
+    max-width: 142px;
+    padding: 15px 24px 14px 25px;
+}
+
+header {
+    padding: 17px 21px 17px 21px;
+    box-shadow: 0 -2px 8px 0 rgba(0, 0, 0, 0.25);
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+
+        font: {
+            size: 30px;
+            weight: 700;
+        }
+
+        line-height: l(30, 28);
+        color: $logo;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav,
+    ul {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        margin-right: 27px;
+    }
+}
+
+.hero {
+    margin-top: 29px;
+
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+        padding: 29px 18px 0 24px;
+    }
+
+    svg {
+        max-width: 338px;
+        height: auto;
+    }
+
+    h1 {
+        font: {
+            size: 36px;
+            weight: 700;
+        }
+
+        line-height: l(60, 36);
+        text-align: center;
+    }
+
+    p {
+        max-width: 326px;
+        font-size: 18px;
+        line-height: l(28, 18);
+        text-align: center;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        ul li {
+            display: flex;
+            gap: 28px;
+        }
+    }
+}
